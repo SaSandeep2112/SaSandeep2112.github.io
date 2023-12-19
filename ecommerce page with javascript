@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: auto;
+    position: auto;
+    bottom: 0;
+    width: 20px;
+}
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.product-info {
+    max-width: 300px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.cart-container {
+    margin: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SanBuy - E-commerce</title>
+</head>
+<body>
+
+    <header>
+        <h1>SanBuy</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="product-container">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQKeNZJ4_8rLU-gm42j45--MaXiaKsiWDc7zBuI6xLS6ugiLMkBjv4N7SVDxPboM68f_87QL-R65C3d7sy_sk1qnyh1uaGpwuhfopcpfOo" alt="Product Image">
+        <div class="product-info">
+            <h2>Product Name</h2>
+            <p>Description: Lorem ipsum dolor sit amet...</p>
+            <p>Price: Rs599</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+    <div class="product-container">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSPlOvRPOokOZ4AP2Xm3W7PVKWo6lqRKJBgBXi3mJJdPZufxK-w0vvYbrdVplUmMSOcmDv7ARra_r8WI7fyPxnrVH_oenma0Ria75dJ4p1mH8r6vNwly0dBr2c" alt="Product Image">
+        <div class="product-info">
+            <h2>Product Name</h2>
+            <p>Description: Lorem ipsum dolor sit amet...</p>
+            <p>Price: Rs479</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+    <div class="product-container">
+       <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSDVoEm_BzKppM38ZyZYhDQrI_Xf8_9-gHcGPqYcjOp8P5r2NnFMEtXHI8j3-HQlEdZDnIrAVi3IBnxSA738IR387oqVBcK4NXUU9jGEt-sySZ6l7ujRGdr" alt="product name">
+            <h2>Product Name</h2>
+            <p>Description: Lorem ipsum dolor sit amet...</p>
+            <p>Price:Rs385</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+    
+    <div class="cart-container">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 SanBuy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
