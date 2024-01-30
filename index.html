@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: rgb(0, 0, 32);
+        color: white;
+        font-family: 'Poppins',sans-serif;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 85px;
+        background-color: rgb(3, 3, 45);
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+
+    }
+    nav ul li{
+        list-style: none;
+        margin: 0 23px;
+
+    }
+    nav ul li a{
+      text-decoration: none;
+      color: white;
+    }
+    nav ul li a:hover{
+       color: rgb(153, 153, 226);
+       font-size: 0.9rem;
+    }
+    .left{
+        font-size: 1.5rem;
+    }
+    .firstsection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center; 
+        margin: 110px 0;
+     
+        
+    }
+    .firstsection > div{
+        width: 30%;
+    }
+    .leftsection{
+               font-size: 2rem;
+             
+    }
+    .leftsection .buttons {
+        padding: 50px 0;
+    }
+    .leftsection .btn {
+               padding: 12px;
+               background: #1e2167;
+               color: white;
+               border: 2px solid white;
+               border-radius: 6px;
+               font-size: 20px;
+               cursor: pointer;
+                 }
+    .rightsection{
+        
+        width: 34px;
+    }
+    .rightsection img{
+        width: 90%;
+        margin: 50px 0;
+    }
+    .purple{
+        color: rgb(145, 75, 210);
+    }
+    #element{
+        color: rgb(170, 107, 228);
+    }
+    .secondsection{
+        max-width: 80vw;
+        margin: auto;
+        height: 70vh;
+    
+    }
+    .secondsection .box{
+        background-color: white;
+        width: 60vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+    }
+    main hr{
+        border: 0;
+        background: #9c97f1;
+        height: 0.5px;
+        margin: 20px 50px;
+    }
+    .secondsection h1{
+        font-size: 1.9rem;
+    }
+    .text-gray{
+        color: gray;
+    }
+    .secondsection .vertical{
+        height: 93px;
+        width: 1px;
+        background-color: wheat;
+        margin: 0 130px;
+    }
+    .image-top{
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+    }
+    .vertical-title{
+          position: relative;
+          top: 75px;
+          width: 150px;
+
+    }
+    .vertical-desc{
+          position: relative;
+          top: 87px;
+          color: gray;
+          width: 150px;
+          font-size: 9px;
+    }
+    .footer-r{
+        width: auto;
+        padding: auto;
+        margin: auto;
+        color: lavender;
+        background-color: rgb(50, 40, 60);
+        display: flex;
+        justify-content: center;
+    }
+    
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="left">Sandeep Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Sandeep</span> 
+                <div>and I am a passionate</div>
+                
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="pdf/Sandeep sahu[1].pdf"><button class="btn">Download Resume</button></a>
+                    <a href="https://github.com/SaSandeep2112/SaSandeep2112.github.io"><button class="btn">Visit Github</button></a>
+                </div>
+            </div>
+            <div class="rightsection">
+            <img src="images/bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="images/kisspng-web-development-cascading-style-sheets-css3-html-5ae480845f38f3.0110241015249245483901.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer <span>(2023-Present)</span>
+                    </div>
+                    <div class="vertical-desc">
+                        I have been proficient in HTML and CSS since 2023, and I've been working as an HTML developer since then. My expertise includes crafting dynamic and visually appealing web pages, ensuring a seamless user experience through effective front-end development.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/kisspng-node-js-javascript-npm-computer-icons-web-applicat-5ae0f85a3ac1c4.3592483215246930822407.png" alt="">
+                    <div class="vertical-title">
+                        Node.js Developer <span>(2023-Present)</span>
+                    </div>
+                    <div class="vertical-desc">
+                        I've gained proficiency in JavaScript since 2023, and I've been actively working as a JavaScript developer. My skills include building interactive and responsive web applications, utilizing the latest frameworks and ensuring optimal functionality on the client side.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/kisspng-brick-wall-red-brick-wall-shading-c-5a8c57207423e5.3241915615191467844757.png" alt="">
+                    <div class="vertical-title">
+                        Progamming with C <span>(2023-Present)</span>
+                    </div>
+                    <div class="vertical-desc">
+                        I've been adept in C programming since 2023 and have served as a C developer since then. My capabilities encompass writing efficient and robust code, solving complex problems, and contributing to the development of various software applications using the C programming language.
+                    </div>
+                </div>
+            
+             
+            </div>
+        </section>
+    </main>
+    <br>
+    <br>
+    <footer>
+        <div class="footer-r">
+            <h4>Copyright&#169;sandeepportfolio | All rights reserved</h4>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer.', 'Business Analysts.'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
+
